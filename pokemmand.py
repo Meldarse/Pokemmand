@@ -1292,6 +1292,6 @@ while victory == False and defeat == False:
 
     clean_screen()
 if victory == True:
-    print(victory)
+    print(winner)
 else:
     print(game_over)
