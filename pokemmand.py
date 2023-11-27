@@ -1154,7 +1154,6 @@ while victory == False and defeat == False:
             phase = False
 
             while current_life_pikachu > 0 and current_life_sirfetchd > 0:
-                clean_screen()
                 print(sirfetchd)
                 print("Turno de Sirfetchd")
                 if current_life_sirfetchd > ((3 * LIFE_INITIAL_SIRFETCHD) / 4):
