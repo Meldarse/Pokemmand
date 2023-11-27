@@ -921,7 +921,7 @@ while victory == False and defeat == False:
                     print("Forretress termina de cargar su ataque y usa Zap Cannon")
                     current_life_pikachu -= 120
                     charge -= 1
-                elif charge == 0:
+                elif charge <= 0:
                     forretress_attack_types = ["Zap Cannon", "Protect", "Autotomize", "Heavy Slam"]
                     attack_forretress = random.choice(forretress_attack_types)
                     print("Forretress usa {}".format(attack_forretress))
@@ -986,7 +986,7 @@ while victory == False and defeat == False:
                         weight -= 1
                         charge -= 1
                         if weight > 0:
-                            weight = 0
+                            weight = 1
                         if charge == 0:
                             charge = 1
                     elif attack_pikachu == 3:
